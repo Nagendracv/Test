@@ -1,0 +1,12 @@
+﻿<template>
+    <div id="vueapp">
+        <h2>{{msg}}</h2>
+
+        <kendo-grid :data-source="datasource"
+                    :pageable='true'
+                     v-on:page="onPageChanging()">
+        </kendo-grid>
+
+    </div>
+</template>
+<script src="./kendo.ts"></script>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+	<label id="lblStatus">Login:</label>
+	<input id="btnLogin" type="button" value="Login" onclick="Login()"/>
+	<input id="btnAction" type="button" value="Action" />
+	<input id="btnLogout" type="button" value="Logout" style="display:none"/>
+	<script>
+		
+		function Login() {
+			var settings = {
+				"async": true,
+				"crossDomain": true,
+				"url": "http://localhost:62370/api/token",
+				"method": "POST",
+				"headers": {
+					"Cache-Control": "no-cache",
+					"Postman-Token": "8810d513-d5e5-4285-b852-e86556b59c79",
+					"Content-Type": "application/x-www-form-urlencoded"
+				},
+				"data": {
+					"username": "TEST",
+					"password": "TEST"
+				}
+			};
+			$.ajax(settings).done(function (response) {
+				debugger;
+				console.log(response);
+			});
+		}
+		function GetValues() {
+			var settings = {
+				"async": true,
+				"crossDomain": true,
+				"url": "http://localhost:4052/api/values",
+				"method": "GET",
+				"headers": {
+					"Cache-Control": "no-cache",
+					"Postman-Token": "0156806a-1467-4bf6-9180-662d4d87a503"
+				}
+			}
+
+			$.ajax(settings).done(function (response) {
+				debugger;
+				console.log(response);
+			});
+		}
+	</script>
+</body>
+</html>

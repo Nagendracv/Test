@@ -1,0 +1,11 @@
+{
+  "spec_dir": "unittests",
+	"spec_files": [
+		"unittests/*.js"
+	],
+	"helpers": [
+		"foundation/*.js"
+	],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}

@@ -1,0 +1,27 @@
+<template>
+    <div>
+        <h1>Counter</h1>
+
+        <p>This is a simple example of a Vue.js component.</p>
+
+        <p>Current count: <strong>{{ currentcount }}</strong></p>
+
+        <button @click="incrementCounter">Increment</button>
+        <br />
+        <br />
+        <input id="msgabc" v-model="message" placeholder="edit me">
+        <button v-on:click="addItem()">Add To Array</button>
+        <p id="destd">Message is: {{ message }}</p>
+        <p>Length of the Message: {{ messageLength }}</p>
+        <p>Length of the Message: {{ messageLength2() }}</p>
+
+        <ul>
+            <li v-for="(msg,index) in messages">
+                <p>{{msg}}</p>
+                <button @click="removeItem(index)"> Remove from Array</button>
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script src="./counter.ts"></script>

@@ -1,0 +1,11 @@
+﻿{
+
+  "Framework": "jasmine",
+  "References": [
+    { "Path": "ClientApp" }
+  ],
+
+  "Tests": [
+    { "Path": "UnitTests" }
+  ]
+}

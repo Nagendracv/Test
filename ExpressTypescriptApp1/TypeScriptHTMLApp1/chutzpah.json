@@ -1,0 +1,14 @@
+﻿{
+	"Framework": "jasmine",
+	"Compile": {
+		"Mode": "External",
+		"Extensions": [ "*.ts" ],
+		"ExtensionsWithNoOutput": ["*.d.ts"]
+	},
+	"References": [
+		{ "Path": "/scripts", "Include": "*.js", "Exclude": "*.d.ts" }
+	],
+	"Tests": [
+		{ "Path": "unittests", "Includes": [ "*.spec.js" ], "Excludes": [ "*.d.ts" ], "ExpandReferenceComments": "true" }
+	]
+}
