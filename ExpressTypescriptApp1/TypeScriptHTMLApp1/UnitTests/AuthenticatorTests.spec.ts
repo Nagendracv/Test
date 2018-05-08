@@ -3,6 +3,7 @@
 /// <reference path="../Foundation/Security/Impl/Credentials.d.ts" />
 /// <chutzpah_reference path="../scripts/jasmine/jasmine.js" >
 /// <chutzpah_reference path="../node_modules/systemjs/dist/system.js" >
+/// <chutzpah_reference path="../node_modules/requirejs/bin/r.js" >
 /// <chutzpah_reference path="../Foundation/Security/Impl/Credentials.js" >
 
 //import { Credentials } from "../Foundation/Security/Impl/Credentials";
