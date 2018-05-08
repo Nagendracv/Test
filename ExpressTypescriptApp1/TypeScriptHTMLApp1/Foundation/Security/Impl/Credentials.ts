@@ -1,5 +1,5 @@
 ﻿
-	class Credentials {
+	export class Credentials {
 
 		/// <summary>
 		/// Company or Organization Name. Mandatory for Pethealth. Optional in OAuth

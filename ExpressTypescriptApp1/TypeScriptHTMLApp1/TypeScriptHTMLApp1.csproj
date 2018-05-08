@@ -71,6 +71,7 @@
   <ItemGroup>
     <Content Include="bower.json" />
     <Content Include="Foundation\Security\Impl\Credentials.js.map" />
+    <Content Include="package.json" />
     <None Include="packages.config" />
     <None Include="chutzpah.json" />
     <Content Include="Foundation\Security\Impl\Credentials.js" />
