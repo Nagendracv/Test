@@ -32,6 +32,19 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>System</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,10 +70,36 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="bower.json" />
+    <Content Include="Foundation\Security\IAuthenticationResult.js.map" />
+    <Content Include="Foundation\Security\IAuthenticator.js.map" />
+    <Content Include="Foundation\Security\IAuthorizationResult.js.map" />
+    <Content Include="Foundation\Security\ICredentials.js.map" />
+    <Content Include="Foundation\Security\Impl\AuthenticationResult.js.map" />
+    <Content Include="Foundation\Security\Impl\Authenticator.js.map" />
+    <Content Include="Foundation\Security\Impl\AuthorizationResult.js.map" />
+    <Content Include="Foundation\Security\Impl\Credentials.js.map" />
+    <Content Include="Foundation\Security\Impl\CustomUser.js.map" />
+    <Content Include="Foundation\Security\IWebAuthenticator.js.map" />
+    <Content Include="Foundation\Security\IWebOAuth2Authorizer.js.map" />
     <None Include="packages.config" />
     <None Include="chutzpah.json" />
+    <Content Include="Foundation\Security\IAuthenticationResult.js" />
+    <Content Include="Foundation\Security\IAuthenticator.js" />
+    <Content Include="Foundation\Security\IAuthorizationResult.js" />
+    <Content Include="Foundation\Security\ICredentials.js" />
+    <Content Include="Foundation\Security\Impl\AuthenticationResult.js" />
+    <Content Include="Foundation\Security\Impl\Authenticator.js" />
+    <Content Include="Foundation\Security\Impl\AuthorizationResult.js" />
+    <Content Include="Foundation\Security\Impl\Credentials.js" />
+    <Content Include="Foundation\Security\Impl\CustomUser.js" />
+    <Content Include="Foundation\Security\IWebAuthenticator.js" />
+    <Content Include="Foundation\Security\IWebOAuth2Authorizer.js" />
+    <Content Include="Service\Shared\Security\IAuthenticatorService.js" />
+    <Content Include="Service\Shared\Security\Impl\AuthenticatorService.js" />
     <Content Include="UnitTests\AuthenticatorTests.spec.js.map" />
     <Content Include="UnitTests\support\jasmine.json" />
+    <Content Include="Service\Shared\Security\IAuthenticatorService.js.map" />
+    <Content Include="Service\Shared\Security\Impl\AuthenticatorService.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -82,7 +121,20 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="Foundation\Security\IAuthenticationResult.ts" />
+    <TypeScriptCompile Include="Foundation\Security\IAuthenticator.ts" />
+    <TypeScriptCompile Include="Foundation\Security\IAuthorizationResult.ts" />
+    <TypeScriptCompile Include="Foundation\Security\ICredentials.ts" />
+    <TypeScriptCompile Include="Foundation\Security\Impl\AuthenticationResult.ts" />
+    <TypeScriptCompile Include="Foundation\Security\Impl\Authenticator.ts" />
+    <TypeScriptCompile Include="Foundation\Security\Impl\AuthorizationResult.ts" />
+    <TypeScriptCompile Include="Foundation\Security\Impl\Credentials.ts" />
+    <TypeScriptCompile Include="Foundation\Security\Impl\CustomUser.ts" />
+    <TypeScriptCompile Include="Foundation\Security\IWebAuthenticator.ts" />
+    <TypeScriptCompile Include="Foundation\Security\IWebOAuth2Authorizer.ts" />
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
+    <TypeScriptCompile Include="Service\Shared\Security\IAuthenticatorService.ts" />
+    <TypeScriptCompile Include="Service\Shared\Security\Impl\AuthenticatorService.ts" />
     <TypeScriptCompile Include="UnitTests\AuthenticatorTests.spec.ts" />
   </ItemGroup>
   <ItemGroup>

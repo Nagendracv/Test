@@ -3,12 +3,18 @@
 	"Compile": {
 		"Mode": "External",
 		"Extensions": [ "*.ts" ],
-		"ExtensionsWithNoOutput": ["*.d.ts"]
+		"ExtensionsWithNoOutput": [ "*.d.ts" ]
 	},
 	"References": [
-		{ "Path": "/scripts", "Include": "*.js", "Exclude": "*.d.ts" }
+		{ "Path": "node_modules/promise-polyfill/dist", "Include": "*.js", "Exclude": "*.d.ts", "IsTestFrameworkFile": true },
+		{ "Path": "node_modules/systemjs/dist", "Include": "*.js", "Exclude": "*.d.ts", "IsTestFrameworkFile": true },
+		{ "Path": "node_modules/requirejs/bin", "Include": "*.js", "Exclude": "*.d.ts", "IsTestFrameworkFile": true },
+		{ "Path": "foundation/security", "Include": "*.ts", "Exclude": "*.d.ts" },
+		{ "Path": "foundation/security/impl", "Include": "*.ts", "Exclude": "*.d.ts" },
+		{ "Path": "service/shared/security", "Include": "*.ts", "Exclude": "*.d.ts" },
+		{ "Path": "service/shared/security/impl", "Include": "*.ts", "Exclude": "*.d.ts" }
 	],
-	"Tests": [
-		{ "Path": "unittests", "Includes": [ "*.spec.js" ], "Excludes": [ "*.d.ts" ], "ExpandReferenceComments": "true" }
-	]
+	"Tests": [ { "Includes": [ "*/unittests/*.spec.ts" ], "Excludes": [ "*/unittests/*.d.ts" ], "ExpandReferenceComments": "true" } ],
+	"EnableTracing": true,
+	"TraceFilePath": "./trace.log"
 }
