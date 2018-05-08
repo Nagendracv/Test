@@ -40,7 +40,7 @@
     <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
     <TypeScriptOutFile />
     <TypeScriptOutDir />
-    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
     <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
     <TypeScriptSourceMap>True</TypeScriptSourceMap>
     <TypeScriptMapRoot />
@@ -70,11 +70,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="bower.json" />
-    <Content Include="Foundation\Security\ICredentials.js.map" />
     <Content Include="Foundation\Security\Impl\Credentials.js.map" />
     <None Include="packages.config" />
     <None Include="chutzpah.json" />
-    <Content Include="Foundation\Security\ICredentials.js" />
     <Content Include="Foundation\Security\Impl\Credentials.js" />
     <Content Include="UnitTests\AuthenticatorTests.spec.js.map" />
     <Content Include="UnitTests\support\jasmine.json" />
@@ -99,7 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="Foundation\Security\ICredentials.ts" />
     <TypeScriptCompile Include="Foundation\Security\Impl\Credentials.ts" />
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
     <TypeScriptCompile Include="UnitTests\AuthenticatorTests.spec.ts" />
