@@ -76,12 +76,8 @@
     <None Include="chutzpah.json" />
     <Content Include="Foundation\Security\ICredentials.js" />
     <Content Include="Foundation\Security\Impl\Credentials.js" />
-    <Content Include="Service\Shared\Security\IAuthenticatorService.js" />
-    <Content Include="Service\Shared\Security\Impl\AuthenticatorService.js" />
     <Content Include="UnitTests\AuthenticatorTests.spec.js.map" />
     <Content Include="UnitTests\support\jasmine.json" />
-    <Content Include="Service\Shared\Security\IAuthenticatorService.js.map" />
-    <Content Include="Service\Shared\Security\Impl\AuthenticatorService.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,8 +102,6 @@
     <TypeScriptCompile Include="Foundation\Security\ICredentials.ts" />
     <TypeScriptCompile Include="Foundation\Security\Impl\Credentials.ts" />
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
-    <TypeScriptCompile Include="Service\Shared\Security\IAuthenticatorService.ts" />
-    <TypeScriptCompile Include="Service\Shared\Security\Impl\AuthenticatorService.ts" />
     <TypeScriptCompile Include="UnitTests\AuthenticatorTests.spec.ts" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+    <Folder Include="Service\Shared\Security\Impl\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
